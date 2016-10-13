@@ -13,6 +13,8 @@ public class Practic {
         Metronom metronom = new Metronom();
         Alarm alarm = new Alarm();
         alarm.addCondition(5);
+        alarm.addCondition(7);
+//        alarm.addCondition(5);
         alarm.setMetronom(metronom);
         //Запуск потока будильника
         Thread alarmThread = new Thread(alarm);
